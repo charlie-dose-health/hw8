@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Add Course</title>
+  </head>
+
+  <body>
+    <h1> Add Course </h1>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a href="/"><b>Spring 18 Course Offering</b></a></li>
+          <li><a href="addCourse.html"><b>Add Course</b></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <form name ="add" method = "POST" action= "/postCourse">
+      <p>ID: <input type="text" name = "courseId"> </p>
+      <p>Title: <input type="text" name = "courseTitle"> </p>
+      <p>Credit: <input type="text" name = "courseCredit"> </p>
+      <p>Term: <input type="text" name = "courseTerm"> </p>
+      <p>Instructor: <input type="text" name ="courseInstructor"> </p>
+      <input type="submit" value="submit" >
+    </form>
+  </body>
+</html>
