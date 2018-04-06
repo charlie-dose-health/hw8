@@ -1,0 +1,7 @@
+{
+  "name": "hw8",
+  "description": "a really cool app",
+  "engines": {
+    "node": "6.12.3"
+  }
+}
