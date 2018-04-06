@@ -18,7 +18,7 @@ const fs = require('fs');
 const hostname = '127.0.0.1';
 
 // port on which server runs
-const port = 8080;
+const port = 80;
 
 console.log(process.env);
 // createServer method creates the http server
