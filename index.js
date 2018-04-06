@@ -18,9 +18,9 @@ const fs = require('fs');
 const hostname = '127.0.0.1';
 
 // port on which server runs
-const port = 9000;
+const port = 8080;
 
-
+console.log(process.env);
 // createServer method creates the http server
 // req, res objects are created automatically by Node.js
 const httpServer = http.createServer(function (req, res) {
@@ -149,6 +149,7 @@ function getHomePage(req, res) {
   		var parseJson = JSON.parse(content);
       // generate the html content
   		var tableData = '';
+		tableData += '<h4>' + process.env + '</h4>'; 
   		tableData += '<thead>';
   		tableData += '<tr>';
   		tableData += '<th>';
